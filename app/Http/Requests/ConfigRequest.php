@@ -24,7 +24,9 @@ class ConfigRequest extends Request
     public function rules()
     {
         return [
-            'test' => 'required|numeric|between:1,20'
+            'test' => 'required|numeric',
+            'size' => 'required|numeric',
+            'cant' => 'required|numeric'
         ];
     }
 }
